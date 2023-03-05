@@ -18,8 +18,11 @@ Output
 
 ## Usage
 1. Download the file
-2. Replace the test.txt with your own file with the same name.
-3. Run the following command in the terminal:
+2. Run the following command in the terminal:
 ```bash
-python3 converter.py
+python3 converter.py <input_file>
+
+# for example
+python3 converter.py test.txt
 ```
+3. The output will be in the same directory named as `{file_base_name}-converted.txt`. For example, `test-converted.txt`.
