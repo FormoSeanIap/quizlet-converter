@@ -9,7 +9,10 @@ def convert(file_name):
         with open(f"{file_base_name}-converted.txt", "w", encoding="utf-8") as output_file:
             for line in text_split:
                 line_parts = line.split()
-                line_new = f"{line_parts[0]}({line_parts[2]}),{line_parts[1]}"
+                writing = line_parts[0]
+                reading = line_parts[1]
+                meaning = line_parts[-1]
+                line_new = f"{writing}({meaning}),{reading}"
                 output_file.write(line_new + "\n")
 
 
