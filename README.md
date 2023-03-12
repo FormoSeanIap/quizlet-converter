@@ -16,8 +16,8 @@ Output
 ```text
 落價(降價),lo̍h-kè
 落眠(熟睡),lo̍h-bîn
-攄頭毛 lu thâu-mn̂g	把頭髮推(剪)平
-兩蕊目睭 nn̄g lúi ba̍k-chiu	兩隻眼睛
+攄頭毛(把頭髮推(剪)平),lu thâu-mn̂g 
+兩蕊目睭(兩隻眼睛),nn̄g lúi ba̍k-chiu 
 (大眾傳媒、媒體、傳媒業),マスコミ
 ```
 
