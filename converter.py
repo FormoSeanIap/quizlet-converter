@@ -11,12 +11,17 @@ def split_lines(text):
 def convert_line(line):
     line_parts = line.split()
     if len(line_parts) == 2:
+        # no reading. e.g. マスコミ    大眾傳媒、媒體、傳媒業 -> (大眾傳媒、媒體、傳媒業),マスコミ
         writing = line_parts[0]
         meaning = line_parts[-1]
         line_new = f"({meaning}),{writing}"
     else:
+        # has reading. e.g. 落價 lo̍h-kè	降價 -> lo̍h-kè(降價),落價
+        # has reading with multiple parts. e.g. 兩蕊目睭 nn̄g lúi ba̍k-chiu	兩隻眼睛 -> nn̄g lúi ba̍k-chiu(兩隻眼睛),兩蕊目睭
         writing = line_parts[0]
-        reading = line_parts[1]
+        reading = ""
+        for i in range(1, len(line_parts) - 1):
+            reading += f'{line_parts[i]} '
         meaning = line_parts[-1]
         line_new = f"{writing}({meaning}),{reading}"
     return line_new
